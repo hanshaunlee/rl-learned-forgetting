@@ -1,0 +1,61 @@
+# Code-only: track src/, scripts/, pyproject.toml, and this file. Nothing else.
+
+/*
+!/.gitignore
+!/pyproject.toml
+!/src/
+!/scripts/
+
+/src/**
+!/src/**/
+!/src/**/*
+
+/scripts/**
+!/scripts/**/
+!/scripts/**/*
+
+# Generated / local artifacts (explicit so they never slip in)
+/data/
+/features/
+/checkpoints/
+/results/
+/plots/
+/figures/
+learned_forgetting.egg-info/
+
+# Binary & export formats
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.pdf
+*.svg
+*.csv
+*.json
+*.npz
+*.npy
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.pkl
+*.pickle
+
+# Docs & agent notes
+*.md
+
+# Python noise
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+dist/
+build/
+*.egg-info/
+
+# Env / IDE / secrets
+.env
+.env.*
+.vscode/
+.idea/
+environment.yml
